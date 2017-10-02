@@ -1,0 +1,67 @@
+﻿<Window x:Class="Ascon.ManagerEdition.Wizard.Views.CreateRedactionView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Ascon.ManagerEdition.Wizard.Views"
+             xmlns:tools="clr-namespace:Ascon.Pilot.Theme.Tools;assembly=Ascon.Pilot.Theme"
+             xmlns:theme="clr-namespace:Ascon.Pilot.Theme;assembly=Ascon.Pilot.Theme"
+             mc:Ignorable="d" 
+             Height="140" Width="650">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <tools:SharedResourceDictionary Source="/Ascon.Pilot.Theme;component/Themes/StandardControls.xaml"/>
+                <tools:SharedResourceDictionary Source="/Ascon.Pilot.Theme;component/Themes/sharedresources/sharedresources.xaml"/>
+                <tools:SharedResourceDictionary Source="/Ascon.Pilot.Theme;component/Themes/standardcontrols/textblock.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock FontSize="20" 
+                   Grid.ColumnSpan="3"
+                   Margin="5, 10, 5, 10"
+                   HorizontalAlignment="Left" 
+                   Text="Выберите вид новой редакции"
+                   Style="{StaticResource {theme:StyleKey DialogTitleStyle}}"/>
+
+        <Button Name="createP"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Margin="5, 10, 5, 10" Grid.Row="1" Content="Согласование (P__)"
+                Command="{Binding CreatedRedaction}"
+                CommandParameter="{Binding Name, ElementName=createP}"
+                IsEnabled="{Binding ActionCreateP}"/>
+
+        <Button Name="createA"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Margin="5, 10, 5, 10" Grid.Row="1" Grid.Column="1"
+                Content="Утверждение (А__)"
+                Command="{Binding CreatedRedaction}"
+                CommandParameter="{Binding Name, ElementName=createA}"
+                IsEnabled="{Binding ActionCreateA}"/>
+
+        <Button Name="createI"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Margin="5, 10, 5, 10" Grid.Row="1"  Grid.Column="2"
+                Content="Исполнение (И__)"
+                Command="{Binding CreatedRedaction}"
+                CommandParameter="{Binding Name, ElementName=createI}"
+                IsEnabled="{Binding ActionCreateI}"/>
+    </Grid>   
+</Window>
+ 

@@ -1,0 +1,8 @@
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.ConvertToImage\bin\Debug\Ascon.ManagerEdition.ConvertToImage.dll
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.ConvertToImage\bin\Debug\Ascon.ManagerEdition.ConvertToImage.pdb
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.ConvertToImage\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.ConvertToImage\bin\Debug\WindowsBase.dll
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.ConvertToImage\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.ConvertToImage\obj\Debug\Ascon.ManagerEdition.ConvertToImage.dll
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.ConvertToImage\obj\Debug\Ascon.ManagerEdition.ConvertToImage.pdb
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.ConvertToImage\obj\Debug\Ascon.ManagerEdition.ConvertToImage.csprojResolveAssemblyReference.cache

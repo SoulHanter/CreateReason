@@ -1,0 +1,21 @@
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.Wizard\obj\Debug\Ascon.ManagerEdition.Wizard.csproj.App.config
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.Wizard\obj\Debug\Ascon.ManagerEdition.Wizard.csprojResolveAssemblyReference.cache
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.Wizard\obj\Debug\Views\Template\SourceTemplateView.baml
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.Wizard\obj\Debug\Views\CreateDocumentView.g.cs
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.Wizard\obj\Debug\Views\CreateRedactionView.g.cs
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.Wizard\obj\Debug\Views\CreateRowView.g.cs
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.Wizard\obj\Debug\Views\TableRemarksView.g.cs
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.Wizard\obj\Debug\Views\Template\SourceTemplateView.g.cs
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.Wizard\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.Wizard\obj\Debug\Ascon.ManagerEdition.Wizard.ext_MarkupCompile.cache
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.Wizard\obj\Debug\Ascon.ManagerEdition.Wizard.ext_MarkupCompile.lref
+C:\Users\Тимур\AppData\Local\ASCON\Pilot-ICE Enterprise\Development\Ascon.ManagerEdition.Wizard.ext.dll.config
+C:\Users\Тимур\AppData\Local\ASCON\Pilot-ICE Enterprise\Development\Ascon.ManagerEdition.Wizard.ext.dll
+C:\Users\Тимур\AppData\Local\ASCON\Pilot-ICE Enterprise\Development\Ascon.ManagerEdition.Wizard.ext.pdb
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.Wizard\obj\Debug\Views\CreateDocumentView.baml
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.Wizard\obj\Debug\Views\CreateRedactionView.baml
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.Wizard\obj\Debug\Views\CreateRowView.baml
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.Wizard\obj\Debug\Views\TableRemarksView.baml
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.Wizard\obj\Debug\Ascon.ManagerEdition.Wizard.ext.g.resources
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.Wizard\obj\Debug\Ascon.ManagerEdition.Wizard.ext.dll
+C:\Users\Тимур\Source\Repos\managingeditions\Ascon.ManagerEdition\Ascon.ManagerEdition.Wizard\obj\Debug\Ascon.ManagerEdition.Wizard.ext.pdb

@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{97B758EB-2155-413B-AB2D-D57B497EB4A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ascon.ManagerEdition.Wizard</RootNamespace>
+    <AssemblyName>Ascon.ManagerEdition.Wizard.ext</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\AppData\Local\ASCON\Pilot-ICE Enterprise\Development\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ascon.Pilot.SDK, Version=17.0.22.19582, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ascon.Pilot.SDK.17.0.22.0\lib\net40-Client\Ascon.Pilot.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Ascon.Pilot.Theme, Version=17.0.22.19582, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ascon.Pilot.SDK.17.0.22.0\lib\net40-Client\Ascon.Pilot.Theme.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Windows.Interactivity.WPF.2.0.20525\lib\net40\Microsoft.Expression.Interactions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net40\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks, Version=2.6.10.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.10\lib\net40\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Windows.Interactivity.WPF.2.0.20525\lib\net40\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Converter\AgeToColorConverter.cs" />
+    <Compile Include="Converter\ConvertToDocument.cs" />
+    <Compile Include="Converter\ConvertToInvisible.cs" />
+    <Compile Include="Converter\ConvertToUser.cs" />
+    <Compile Include="Converter\StringToAct.cs" />
+    <Compile Include="ManagerEdition.cs" />
+    <Compile Include="Models\Access.cs" />
+    <Compile Include="Models\AccessRecord.cs" />
+    <Compile Include="Models\Acts.cs" />
+    <Compile Include="Models\ColorsRow.cs" />
+    <Compile Include="Models\Document.cs" />
+    <Compile Include="Models\Documents.cs" />
+    <Compile Include="Models\ProjectSection.cs" />
+    <Compile Include="Models\RemarkFile.cs" />
+    <Compile Include="Models\RemarkFolderObject.cs" />
+    <Compile Include="Models\TableRemarksModel.cs" />
+    <Compile Include="Models\Types.cs" />
+    <Compile Include="Models\Users.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\SettingsForm.cs" />
+    <Compile Include="Properties\SettingsForm.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>SettingsForm.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Admin.cs" />
+    <Compile Include="Settings\ISettingsFactory.cs" />
+    <Compile Include="Settings\PilotObjects.cs" />
+    <Compile Include="Settings\Settings.cs" />
+    <Compile Include="Settings\SettingsFactory.cs" />
+    <Compile Include="Utils\DataObjectExtensions.cs" />
+    <Compile Include="Utils\DocumentExtensions.cs" />
+    <Compile Include="Utils\PasswordExtension.cs" />
+    <Compile Include="Utils\Storage\PilotStorageBase.cs" />
+    <Compile Include="Utils\Storage\StorageImplementation\BaseObjectStorage.cs" />
+    <Compile Include="Utils\Storage\StorageImplementation\RemarkStorage.cs" />
+    <Compile Include="Utils\Storage\StorageImplementation\SelectObject.cs" />
+    <Compile Include="Utils\Storage\StorageInterface\IBaseObjectStorage.cs" />
+    <Compile Include="Utils\Storage\StorageInterface\ICreator.cs" />
+    <Compile Include="Utils\Storage\StorageInterface\IRemarkStorage.cs" />
+    <Compile Include="Utils\Storage\StorageInterface\ISelectObject.cs" />
+    <Compile Include="Utils\Storage\StoragePilotRedaction.cs" />
+    <Compile Include="Utils\Storage\StoragePilotRemark.cs" />
+    <Compile Include="Utils\TemplateObjectExtensions.cs" />
+    <Compile Include="ViewModel\CreateDocumentViewModel.cs" />
+    <Compile Include="ViewModel\CreateRedactionViewModel.cs" />
+    <Compile Include="ViewModel\CreateRowViewModel.cs" />
+    <Compile Include="ViewModel\TableRemarksViewModel.cs" />
+    <Compile Include="ViewModel\Template\DocumentModel.cs" />
+    <Compile Include="ViewModel\Template\DocumentViewModel.cs" />
+    <Compile Include="ViewModel\ViewModelBase.cs" />
+    <Compile Include="Views\CreateDocumentView.xaml.cs">
+      <DependentUpon>CreateDocumentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CreateRedactionView.xaml.cs">
+      <DependentUpon>CreateRedactionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CreateRowView.xaml.cs">
+      <DependentUpon>CreateRowView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TableRemarksView.xaml.cs">
+      <DependentUpon>TableRemarksView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Template\SourceTemplateView.xaml.cs">
+      <DependentUpon>SourceTemplateView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\SettingsForm.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>SettingsForm.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ascon.ManagerEdition.Common\Ascon.ManagerEdition.Common.csproj">
+      <Project>{27ab4f8d-1894-4594-afed-844717969040}</Project>
+      <Name>Ascon.ManagerEdition.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Views\CreateDocumentView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CreateRedactionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CreateRowView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TableRemarksView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Template\SourceTemplateView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Add_File_16.png" />
+    <Resource Include="Icons\Cancel_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Filter_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\Clear_Filters_32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+  </Target>
+</Project>

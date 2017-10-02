@@ -1,0 +1,122 @@
+﻿<UserControl x:Class="Ascon.ManagerEdition.Wizard.Views.CreateRowView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Ascon.ManagerEdition.Wizard.Views.Template"
+             xmlns:tools="clr-namespace:Ascon.Pilot.Theme.Tools;assembly=Ascon.Pilot.Theme"
+             xmlns:theme="clr-namespace:Ascon.Pilot.Theme;assembly=Ascon.Pilot.Theme"
+             xmlns:models="clr-namespace:Ascon.ManagerEdition.Wizard.Models"
+             xmlns:converters="clr-namespace:Ascon.ManagerEdition.Common.MVVMCommon.Converters;assembly=Ascon.ManagerEdition.Common"
+             xmlns:userConvert="clr-namespace:Ascon.ManagerEdition.Wizard.Converter"
+             xmlns:enum="clr-namespace:Ascon.ManagerEdition.Common.MVVMCommon;assembly=Ascon.ManagerEdition.Common"
+             mc:Ignorable="d">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <tools:SharedResourceDictionary Source="/Ascon.Pilot.Theme;component/Themes/StandardControls.xaml"/>
+                <tools:SharedResourceDictionary Source="/Ascon.Pilot.Theme;component/Themes/sharedresources/sharedresources.xaml"/>
+                <tools:SharedResourceDictionary Source="/Ascon.Pilot.Theme;component/Themes/standardcontrols/textblock.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <converters:EnumToItemSourceConverter x:Key="EnumToItemSourceConverter" />
+            <userConvert:ConvertToUser x:Key="ConvertToUser"/>
+            <Style x:Key="Image">
+                <Setter Property="Image.Height" Value="20"/>
+                <Setter Property="Image.Width" Value="20"/>
+                <Setter Property="Image.HorizontalAlignment" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid x:Name="CreateOrEditView">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+       
+        <TextBlock FontSize="15"  Margin="5" HorizontalAlignment="Left"  Text="От кого" VerticalAlignment="Center"
+                   Style="{StaticResource {theme:StyleKey DialogLabeledTextBlockStyle}}" Grid.Row="0"/>
+        <TextBlock FontSize="15"  Margin="5" HorizontalAlignment="Left"  Text="Кому" VerticalAlignment="Center"
+                   Style="{StaticResource {theme:StyleKey DialogLabeledTextBlockStyle}}" Grid.Row="1"/>
+        <TextBlock FontSize="15"  Margin="5" HorizontalAlignment="Left"  Text="Краткое описание" VerticalAlignment="Center"
+                   Style="{StaticResource {theme:StyleKey DialogLabeledTextBlockStyle}}" Grid.Row="2"/>
+        <TextBlock FontSize="15"  Margin="5" HorizontalAlignment="Left"  Text="Приложение" VerticalAlignment="Center"
+                   Style="{StaticResource {theme:StyleKey DialogLabeledTextBlockStyle}}" Grid.Row="3"/>
+        <TextBlock FontSize="15"  Margin="5" HorizontalAlignment="Left"  Text="Документ редакции" VerticalAlignment="Center"
+                   Style="{StaticResource {theme:StyleKey DialogLabeledTextBlockStyle}}" Grid.Row="4"/>
+        <TextBlock FontSize="15"  Margin="5" HorizontalAlignment="Left"  Text="Действие" VerticalAlignment="Center"
+                   Style="{StaticResource {theme:StyleKey DialogLabeledTextBlockStyle}}" Grid.Row="5" Visibility="Collapsed"/>
+        <TextBlock FontSize="15"  Margin="5" HorizontalAlignment="Left"  Text="Комментарий" VerticalAlignment="Center"
+                   Style="{StaticResource {theme:StyleKey DialogLabeledTextBlockStyle}}" Grid.Row="6"/>
+
+        <ComboBox Name="FromUser" Grid.Row="0" Grid.Column="1" Margin="5"
+                  ItemsSource="{Binding GetFromUser}"
+                  SelectedValue="{Binding Remark.FromUser, UpdateSourceTrigger=PropertyChanged}">
+        </ComboBox>
+
+        <ComboBox Name="ToUser" Grid.Row="1" Grid.Column="1" Margin="5"
+                  ItemsSource="{Binding GetToUser}"
+                  SelectedValue="{Binding Remark.ToUser, UpdateSourceTrigger=PropertyChanged}">
+        </ComboBox>
+        
+        <TextBox FontSize="15"  Margin="5" HorizontalAlignment="Stretch"  Text="{Binding Remark.Description, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                 Grid.Row="2" Grid.Column="1"/>
+
+        <Grid Grid.Row="3" Grid.Column="1" Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="auto"/>                
+            </Grid.ColumnDefinitions>
+            
+            <local:SourceTemplateView HorizontalContentAlignment="Stretch"
+                   DataContext="{Binding Enlargements, Mode=OneTime, UpdateSourceTrigger=PropertyChanged}"/>
+            <Button Grid.Column="1" Margin="5" Command="{Binding AddFile}" CommandParameter="Выбрать приложения" ToolTip="Выбрать приложения">
+                <Image Source="/Ascon.ManagerEdition.Wizard.ext;component/Icons/Add_File_16.png" Style="{StaticResource Image}"/>
+            </Button>
+        </Grid>
+
+
+        <Grid Grid.Row="4" Grid.Column="1" Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+
+            <local:SourceTemplateView HorizontalContentAlignment="Stretch"
+                   DataContext="{Binding Documents, Mode=OneTime, UpdateSourceTrigger=PropertyChanged}"/>
+            <Button Grid.Column="1" Margin="5" Command="{Binding AddFile}" CommandParameter="Выбрать документы редакции" ToolTip="Выбрать документы редакции">
+                <Image Source="/Ascon.ManagerEdition.Wizard.ext;component/Icons/Add_File_16.png" Style="{StaticResource Image}"/>
+            </Button>
+        </Grid>
+
+
+
+        <ComboBox Name="Act" Grid.Row="5" Grid.Column="1" Margin="5"
+                  IsHitTestVisible="{Binding IsEdit}" Visibility="Collapsed"
+                  ItemsSource="{Binding Source={enum:EnumToBindingSource {x:Type models:Acts}}}"
+                  SelectedValue="{Binding Remark.Act, Converter={StaticResource EnumToItemSourceConverter}, ConverterParameter={x:Type models:Acts}, UpdateSourceTrigger=PropertyChanged}">
+        </ComboBox>
+
+        <TextBox FontSize="15"  Margin="5" HorizontalAlignment="Stretch"  Text="{Binding Remark.Commit, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                 Grid.Row="6" Grid.Column="1" TextWrapping="Wrap" AcceptsReturn="True"/>
+
+        <Grid Grid.Row="7" Grid.Column="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>            
+            <Button Margin="5" Content="Ок" Command="{Binding Ok}" HorizontalAlignment="Right" Width="200"/>
+            <Button Margin="5" Content="Отмена"  Command="{Binding Cancel}" Grid.Column="1" HorizontalAlignment="Right" Width="200"/>
+        </Grid>
+    </Grid>
+</UserControl>
